@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1>Hello world</h1>
+        <h3 style="color: blue">Hello world</h3>
+        <h3 class="greeting">Hii</h3>
         <app-card></app-card>
     </div>
 </template>
@@ -12,5 +13,7 @@ export default {
 };
 </script>
 <style>
-
+.greeting{
+    color:pink;
+}
 </style>

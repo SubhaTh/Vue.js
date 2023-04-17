@@ -8,7 +8,7 @@ export default {
     name: 'AppCard',
 };
 </script>
-<style>
+<style scoped>
 h3{
     background-color: aqua;
 }
