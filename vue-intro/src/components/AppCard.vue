@@ -1,5 +1,6 @@
 <template>
     <div class="card">
+        <p><small>{{ cardType }}</small></p>
         <h3> card {{ cardTitle}}</h3>
         <h3>{{ cardBody }}</h3>
         <footer>{{ cardMsg }}</footer>
@@ -25,6 +26,13 @@ export default {
             }
         
         },
+        cardType: {
+            type: String,
+            validator: function (value) {
+                return ['sucess', 'error'].includes(value);
+            }
+
+        }
     }
 
 };
