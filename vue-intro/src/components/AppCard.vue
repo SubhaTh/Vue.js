@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <p><small>{{ cardType }}</small></p>
-        <h3> card {{ cardTitle}}</h3>
+        <h3> card {{ cardTitle}} - {{ value }}</h3>
         <h3>{{ cardBody }}</h3>
         <footer>{{ cardMsg }}</footer>
     </div>
@@ -11,6 +11,11 @@
 
 export default {
     name: 'AppCard',
+    data() {
+        return {
+            value: 0
+        }
+    },
     // props: ['cardTitle', 'cardBody'], instead create an object
     props: {
         // cardTitle: String,
