@@ -2,9 +2,12 @@
     <div class="card">
         <h3> card {{ cardTitle}}</h3>
         <h3>{{ cardBody }}</h3>
+        <footer>{{ cardMsg }}</footer>
     </div>
 </template>
 <script>
+
+
 export default {
     name: 'AppCard',
     // props: ['cardTitle', 'cardBody'], instead create an object
@@ -15,6 +18,13 @@ export default {
             required: true,
         },
         cardBody: Number,
+        cardMsg: {
+            type: String,
+            default: function () {
+                return 'Footer default props';
+            }
+        
+        },
     }
 
 };
@@ -25,7 +35,7 @@ h3{
 }
 .card{
     height: 100px;
-    width: 100px;
+    width: 300px;
     border: 1px solid gray;
 
 }

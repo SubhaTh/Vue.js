@@ -1,4 +1,5 @@
 # D:\Learn\Vue>vue create vue-intro
+```
 Vue2
 cd vue-intro
 Code .
@@ -7,8 +8,9 @@ Npm run serve
 package.json - info
 devDependencies - Only work on local. Not going to production code base
 babel - converting new code to js code
-
+```4
 ** structure
+---
 <template>
     <div>
         <h1>Hello world</h1>
@@ -22,6 +24,7 @@ export default {
 <style>
 
 </style>
+---
 #---------------------------------
 # vue-intro
 
