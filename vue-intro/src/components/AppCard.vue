@@ -29,7 +29,11 @@ export default {
         cardType: {
             type: String,
             validator: function (value) {
-                return ['sucess', 'error'].includes(value);
+                // return ['sucess', 'error'].includes(value);
+                if (value === 'sucess' || value === 'error') {
+                    return true;
+                }
+                return false;
             }
 
         }
