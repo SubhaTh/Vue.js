@@ -1,13 +1,22 @@
 <template>
     <div class="card">
-        <h3> {{ cardTitle}}</h3>
+        <h3> card {{ cardTitle}}</h3>
         <h3>{{ cardBody }}</h3>
     </div>
 </template>
 <script>
 export default {
     name: 'AppCard',
-    props: ['cardTitle', 'cardBody'],
+    // props: ['cardTitle', 'cardBody'], instead create an object
+    props: {
+        // cardTitle: String,
+        cardTitle: {
+            type: String,
+            required: true,
+        },
+        cardBody: Number,
+    }
+
 };
 </script>
 <style scoped>
