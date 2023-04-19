@@ -2,7 +2,7 @@
     <div class="card">
         <p><small>{{ cardType }}</small></p>
         <h3> card {{value === 0 ? cardTitle : 'Hello'}} - {{ value }}</h3>
-        <h3>{{ cardBody }}</h3>
+        <h3>{{ cardBody }} hi {{ count }}</h3>
         <footer>{{ cardMsg }}</footer>
     </div>
 </template>
@@ -14,6 +14,7 @@ export default {
     data() {
         return {
             value: 1,
+            count: 3,
         }
     },
     // props: ['cardTitle', 'cardBody'], instead create an object
