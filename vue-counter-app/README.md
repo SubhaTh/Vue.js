@@ -1,3 +1,6 @@
+```
+https://fonts.google.com/ 
+```
 # vue-counter-app
 
 ## Project setup
