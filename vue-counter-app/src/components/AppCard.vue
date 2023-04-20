@@ -1,0 +1,17 @@
+<template>
+    <div> Card
+
+    </div>
+</template>
+
+<script>
+
+
+export default {
+    name: 'AppCard',
+}
+</script>
+
+
+<style>
+</style>
