@@ -2,14 +2,16 @@
   <div>
     <app-header title="Counter App"></app-header>
      <app-card ></app-card>
+     <temp-card :value="56" />
   </div>
 </template>
 <script>
 import AppCard from './components/AppCard.vue';
+import TempCard from './components/TempCard.vue';
 import AppHeader from './components/layout/AppHeader.vue'
 export default {
   name: 'App',
-  components: { AppCard, AppHeader},
+  components: { AppCard, AppHeader, TempCard},
 };
 
 </script>
