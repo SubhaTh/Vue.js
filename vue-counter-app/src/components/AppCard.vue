@@ -1,8 +1,8 @@
 <template>
     <div class="card">
         <h1>Count: {{ count }}</h1>
-        <button @click="showAlert">+</button>
-        <button>-</button>
+        <button @click="incrementCount">+</button>
+        <button @click="decrementCount">-</button>
     </div>
 </template>
 
@@ -18,8 +18,18 @@ export default {
     },
     methods: {
         showAlert() {
-            alert('Hi there');
+            alert('Count value is: $(this.count)');
         },
+        incrementCount() {
+            this.count = this.count + 1;
+        },
+        decrementCount() {
+            if (this.count <= 0) {
+                alert("Count value can't be zero");
+                return;
+            }
+            this.count = this.count - 1;
+        }
     },
 }
 </script>
