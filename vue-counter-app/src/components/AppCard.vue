@@ -1,8 +1,11 @@
 <template>
     <div class="card">
         <h1>Count: {{ count }}</h1>
-        <button @click="incrementCount">+</button>
-        <button @click="decrementCount">-</button>
+        <div class="btn-group">
+             <button class ='btn btn-success' @click="incrementCount">+</button>
+            <button class ='btn btn-danger' @click="decrementCount">-</button>
+        </div>
+       
     </div>
 </template>
 
@@ -44,7 +47,7 @@ export default {
     padding : 14px;
     background-color: #fbfbfb
 }
-button{
+/* button{
     font-size: 20px;
     height: 50px;
     width:100px;
@@ -52,5 +55,5 @@ button{
     border:none;
     background-color: green;
     cursor:pointer;
-}
+} */
 </style>
