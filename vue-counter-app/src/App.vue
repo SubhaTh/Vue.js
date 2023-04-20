@@ -1,8 +1,7 @@
 <template>
   <div>
-    
-    <app-card title="Counter App"></app-card>
-    <app-header></app-header>
+    <app-header title="Counter App"></app-header>
+     <app-card ></app-card>
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{ title }}</h3>
+        <h3 class="app-header">{{ title }}</h3>
     </div>
 
 </template>
@@ -22,6 +22,11 @@ export default {
 <style scoped>
 header{
     background-color : gray;
+}
+.app-header{
+    margin-top:0;
+    text-align: center;
+    padding: 4px;
 }
 
 </style>
